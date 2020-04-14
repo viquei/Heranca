@@ -8,6 +8,9 @@ public class TesterFuncionario {
 		Funcionario programador = new Funcionario();
 		Gerente gerenteProduto = new Gerente();
 	
+		System.out.println("***********************************");
+		System.out.println("Aluno: Vitória Queiroz. Matricula: 0050013165.");
+		System.out.println("***********************************");
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("Nome:");
