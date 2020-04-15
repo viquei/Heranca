@@ -2,11 +2,10 @@ package Heranca;
 
 public class Gerente extends Funcionario{
 	protected int senhaEspecial;
-	private int numeroDeFuncionariosGerenciados;
+	protected int numeroDeFuncionariosGerenciados;
 	
-	public double getBonificacao() {
-		System.out.println(0.1*super.salario + 1000.00);
-		return 0.1*super.salario + 1000.00;
+	double getBonificacao() {
+		return super.getBonificacao() + 1000.00;
 	}
 
 	public int getSenhaEspecial() {
