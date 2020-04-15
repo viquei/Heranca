@@ -8,9 +8,6 @@ public class TesterFuncionario {
 		Funcionario programador = new Funcionario();
 		Gerente gerenteProduto = new Gerente();
 	
-		System.out.println("***********************************");
-		System.out.println("Aluno: Vitória Queiroz. Matricula: 0050013165.");
-		System.out.println("***********************************");
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("Nome:");
@@ -20,7 +17,8 @@ public class TesterFuncionario {
 		System.out.println("Salario:");
 		programador.salario = input.nextDouble();
 		
-		programador.getBonificacao();
+		double bonus = programador.getBonificacao();
+		System.out.println("Bonificação:" + bonus);
 		
 		System.out.println("Nome:");
 		gerenteProduto.nome = input.next();
@@ -33,7 +31,8 @@ public class TesterFuncionario {
 		System.out.println("Funcionarios subordinados:");
 		gerenteProduto.nome = input.next();
 		
-		gerenteProduto.getBonificacao();
+		bonus = gerenteProduto.getBonificacao();
+		System.out.println("Bonificação:" + bonus);
 		System.out.println("Digite sua senha de acesso.");
 		int senha = input.nextInt();
 		gerenteProduto.autenticaSenha(senha);
